@@ -1,0 +1,293 @@
+:root {
+	--text-grey: #868986;
+	--text-white: #FFFFFF;
+	--button-bg: #23A692;
+	--sec-button-bg: #14894A;
+	--off-white: #F1F1F1;
+	--link-color: #357b70;
+	--link-active: #489c79;
+	--grid-bg: #C6D1CF;
+	--cred: #2B2B2B;
+}
+
+* {
+	box-sizing: border-box;
+	/*includes padding & border in size calculation*/
+}
+
+body {
+	background-color: var(--off-white);
+	font-family: 'Comfortaa', cursive;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+	color: var(--text-grey);
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.8;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.6;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+a {
+	color: var(--link-color);
+	transition-duration: 0.2s;
+	transition-property: opacity;
+	&:visited,
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	&:active {
+		color: var(--link-active);
+	}
+}
+
+div {
+	padding: 0 20px;
+}
+
+button,
+.button {
+	border: none;
+	font-family: inherit;
+	background-color: var(--button-bg);
+	color: var(--text-white);
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	transition-duration: 0.5s;
+	transition-property: opacity;
+	&:hover,
+	&:focus,
+	{
+		cursor: pointer;
+		opacity: 0.8;
+	}
+}
+
+.button__secondary {
+	background-color: var(--sec-button-bg);
+	color: var(--off-white);
+}
+
+.logo {
+	width: 200px;
+	height: 70px;
+	padding: 5px;
+}
+
+.page-header {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+
+.page-header__item {
+	flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+	flex-grow: 1;
+	text-align: right;
+}
+
+.navigation-list {
+	list-style-type: none;
+}
+
+.navigation-list li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.navigation-list__item--active {
+	text-decoration: none;
+}
+
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.profile__portrait {
+	float: left;
+	width: 250px;
+	margin-right: 40px;
+	border-radius: 50%;
+}
+
+.vspacers {
+	margin: 10px 0;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+	clear: both;
+}
+
+.london {
+	width: 50%;
+	height: auto
+}
+
+
+/* Grid fallback*/
+
+.grid__item {
+	display: inline-block;
+	width: 33%;
+}
+
+
+/* Grid layout for newer browsers*/
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.grid__item {
+	background-color: var(--grid-bg);
+	padding: 10px;
+	/* Width to auto allows fallback to work without breaking the layout*/
+	width: auto;
+}
+
+.grid__item:last-child {
+	grid-column: 4 / 4;
+	grid-row: 1 / 3;
+}
+
+.page-footer {
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.credit {
+	font-size: 8px;
+	text-align: center;
+	width: 20%;
+}
+
+.credit a {
+	text-decoration: none;
+	color: var(--cred);
+}
+
+
+/*animations*/
+
+@keyframes small-cloud-move {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(60px, 0);
+	}
+}
+
+@keyframes medium-cloud-move {
+	from {
+		transform: translate(50px, 0);
+	}
+	to {
+		transform: translate(-50px, 0);
+	}
+}
+
+@keyframes large-cloud-move {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(-30px, 0);
+	}
+}
+
+@keyframes birdo {
+	from {
+		transform: translate(0, -10px);
+	}
+	to {
+		transform: translate(-5px, 10px);
+	}
+}
+
+@keyframes birdt {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(5px, -20px);
+	}
+}
+
+.scloud {
+	animation: 30s small-cloud-move infinite alternate linear;
+}
+
+.mcloud {
+	animation: 30s medium-cloud-move infinite alternate linear;
+}
+
+.lcloud {
+	animation: 30s large-cloud-move infinite alternate linear;
+}
+
+.birdo {
+	animation: 8s birdo infinite alternate linear;
+}
+
+.birdt {
+	animation: 5s birdt infinite alternate linear;
+}
+
+
+/*media queries*/
+
+@media all and (max-width: 500px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (max-width: 750px) {
+	.grid {
+		grid-gap: 10px;
+	}
+	.grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	.credit {
+		display: none;
+	}
+}
