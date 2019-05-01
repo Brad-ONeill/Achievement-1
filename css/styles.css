@@ -8,6 +8,7 @@
 	--link-active: #489c79;
 	--grid-bg: #C6D1CF;
 	--cred: #2B2B2B;
+
 }
 
 * {
@@ -72,6 +73,7 @@ button,
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 	transition-duration: 0.5s;
 	transition-property: opacity;
+
 	&:hover,
 	&:focus,
 	{
