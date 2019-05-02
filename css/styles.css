@@ -134,8 +134,10 @@ button,
 }
 
 .vspacers {
+	vertical-align: top;
 	margin: 10px 0;
 }
+
 
 .center {
 	display: block;
@@ -143,6 +145,15 @@ button,
 	clear: both;
 }
 
+label {
+	display: block;
+}
+
+textarea {
+	overflow-y: scroll;
+	height: 100px;
+
+}
 .london {
 	width: 50%;
 	height: auto

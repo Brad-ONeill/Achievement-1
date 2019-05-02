@@ -161,16 +161,21 @@ button:focus {
 	margin: 10px 0;
 }
 
+
 .center {
 	display: block;
 	margin: 0 auto;
 	clear: both;
 }
 
+label {
+	display: block;
+}
+
 textarea {
 	overflow-y: scroll;
 	height: 100px;
-	
+
 }
 
 .london {
