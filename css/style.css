@@ -6,6 +6,17 @@ body {
 	background-color: #008a26;
 }
 
+.bgimage {
+    background-image: url("../img/twitchpage.jpg");
+  background-color: #1c243b;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    
+}
+
 .logo {
 	margin: 20px
 }

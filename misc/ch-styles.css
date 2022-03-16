@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #e6e6e6;
+    background-color: #014457;
     font-family: "Comfortaa", cursive;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
-    color: #404040;
+    color: #e4e4e4;
 }
 
 h1 {
@@ -28,11 +28,6 @@ h2 {
     line-height: 1.6;
 }
 
-h2.margined {
-    margin: 40px 0 5px;
-}
-
-
 h3 {
     color: #069874;
     font-weight: 700;
@@ -41,21 +36,21 @@ h3 {
 }
 
 a {
-    color: #357b70;
+    color: #ffffff;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     -webkit-transition-property: opacity;
     transition-property: opacity;
 }
 
-a:visited,
 a:hover,
 a:focus {
     text-decoration: none;
+    color: #489c79;
 }
 
 a:active {
-    color: #489c79;
+    color: #ffffff;
 }
 
 div {
@@ -67,6 +62,9 @@ div.vpad20 {
     width: 100%;
     clear: both;
     margin: 0 auto;
+}
+
+div.vpad20 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -120,7 +118,6 @@ p.sub-center {
 p.pad20 {
     padding: 20px 0;
 }
-
 
 sup {
     width: 100%;
@@ -176,6 +173,7 @@ button:focus {
     display: block;
     margin: 0 auto;
     clear: both;
+    padding: 0;
     width: 100%;
 }
 
@@ -206,9 +204,10 @@ button:focus {
 }
 
 .logo {
-    width: 200px;
-    height: 70px;
-    padding: 5px;
+    width: 350px;
+    height: auto;
+    padding: 0px;
+    margin: 0;
 }
 
 .page-header {
@@ -260,18 +259,17 @@ a.deco_none {
 
 .body_main {
     display: block;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.body-mainMax {
-    display: block;
-    max-width: 80%;
+    max-width: 1024px;
+    padding: 0;
     margin: 0 auto;
 }
 
 .padding10 {
     padding: 10vh 0;
+}
+
+.t-pad20 {
+    padding: 20px 0;
 }
 
 .workpadding {
@@ -538,12 +536,25 @@ img.logoheader {
     margin: 0 0 0 10px
 }
 
-.nopad {
-    padding: 0;
+/*Charity styles*/
+.video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin: 0 0 20px 0;
+    /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
 }
 
-.nomarg {
-    margin: 0;
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flex_cont {
+    display: flex;
+    flex-wrap: wrap
 }
 
 /* media queries */
@@ -559,6 +570,7 @@ img.logoheader {
         margin: -40px 15px 0;
         float: center;
     }
+
 }
 
 @media all and (max-width: 439px) {
@@ -568,6 +580,7 @@ img.logoheader {
         flex-grow: 0 1 auto;
         text-align: center;
     }
+
 }
 
 @media all and (min-width: 320px) and (max-width: 750px) {
@@ -575,6 +588,7 @@ img.logoheader {
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media all and (max-width: 750px) {
@@ -596,14 +610,13 @@ img.logoheader {
     }
 
     .logo {
-        width: 200px;
-        height: 70px;
-        padding: 5px;
-    }
-
-    .logo {
         display: block;
         margin: 0 auto;
         clear: both;
+        width: 100%;
+        height: auto;
+        padding: 5px;
     }
 }
+
+/*Charity Elements Only*/

@@ -2,55 +2,96 @@
 <html lang="en">
 
 <head>
-	<title>Home Page</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-	<!--Specify... font-family: 'Comfortaa', cursive;-->
-	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+        /*font-family: 'Comfortaa', cursive;*/
+        @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+        /*font-family: 'Lato', sans-serif;*/
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
-	  <header class="page-header"> <a href="index.html" class="name_link"><img src="img/logo.png" alt="logo" class="logo page-header__item"></a>
-		<nav class="main-navigation page-header__item">
-			<ul role="menubar" class="navigation-list">
-				
-				<li role="presentation">
-					<a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-				</li>
-				<li role="presentation">
-					<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-				</li>
-				<li role="presentation">
-					<a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-				</li>
-				<li role="presentation">
-					<a href="pokedex/" role="menuitem" class="navigation-list__item">Full Stack immersion</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<div class="profile max__width">
-		<h1> Weclome to the projects page! </h1>
-		<p> This is where I'll be linking all of my work I've been doing as part of my own growth and development.</p>
-			<p>If you're interested in learning how to make soething like this site, check out
-				<a href="https://careerfoundry.com?referral=V7yBmQrX">Career&nbsp;Foundry</a>.</p>
-			<p>They've taught me everything I now know about HTML, CSS and JavaScript</p>
-	</div>
-		
-	<footer class="page-footer">
-		<p> Find me on </p>
-		<div class="social-media">
-			<!-- Github logo -->
-			<img width="30" height="30" src="img/github.svg" alt="the github logo">
-			<!-- Twitter logo -->
-			<img width="30" height="30" src="img/twitter.svg" alt="the twitter logo">
-			<!-- LinkedIn logo -->
-			<img width="30" height="30" src="img/linkedin.svg" alt="the linkedin logo">
-		</div>
-	</footer>
-	<script src="../_CareerFoundry/js/total11y.min.js"></script>
+    <header class="page-header">
+        <a href="index.html" class="name_link"><img src="img/logo.png" alt="logo" class="logo page-header__item"></a>
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation"> <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation"> <a href="contact.html" role="menuitem"
+                        class="navigation-list__item">Contact</a> </li>
+                <li role="presentation"> <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <!--<li role="presentation"> <a href="pokedex/" role="menuitem" class="navigation-list__item">Full Stack
+                        immersion</a> </li>-->
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="max__width">
+            <h1> Weclome to the projects page! </h1>
+        </div>
+        <div class="grid vpad20">
+            <span><a href="https://bradfolio.co.uk/pokedex/" target="new">
+                    <img class="pSnapshot" src="./img/pdsnap.png" width="200px" target="new"></a>
+                <div>
+                    <p class="noPadBot">Pokedex</p>
+                    <a href="https://github.com/Brad-ONeill/Pokedex" target="new">
+                        <p class="noPadTop">Github repo</p>
+                    </a>
+                </div>
+            </span>
+            <span><a href="https://limitless-thicket-23479.herokuapp.com/client/" target="new">
+                    <img class="pSnapshot" src="./img/mfsnap.png" width="200px"></a>
+                <div>
+                    <p class="noPadBot">My Flix</p>
+                    <a href="https://github.com/Brad-ONeill/Movie_api" target="new">
+                        <p class="noPadTop">Github repo</p>
+                    </a>
+                </div>
+            </span>
+
+            <span><a href="https://brad-oneill.github.io/" target="new">
+                    <img class="pSnapshot" src="./img/mqsnap.png" width="200px"></a>
+                <div>
+                    <p class="noPadBot">A page of quizes</p>
+                    <a href="https://github.com/Brad-ONeill/My_Quiz" target="new">
+                        <p class="noPadTop">Github repo</p>
+                    </a>
+                </div>
+            </span>
+            <span><a href="https://brad-oneill.github.io/ToDo/" target="new">
+                    <img class="pSnapshot" src="./img/tdsnap.png" width="200px"></a>
+                <div>
+                    <p class="noPadBot">A simple To Do list</p>
+                    <a href="https://github.com/Brad-ONeill/ToDo" target="new">
+                        <p class="noPadTop">Github repo</p>
+                    </a>
+                </div>
+            </span>
+        </div>
+
+        <div>
+            <p> This is where I'll be linking all of my work I've been doing as part of my own growth and development.
+            </p>
+            <p>If you're interested in learning how to make something like this site, check out
+                <a href="https://careerfoundry.com?referral=V7yBmQrX" target="new">Career&nbsp;Foundry</a>.
+            </p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <p> Find me on </p>
+        <div class="social-media">
+            <!-- Github logo --><img width="30" height="30" src="img/github.svg" alt="the github logo">
+            <!-- Twitter logo --><img width="30" height="30" src="img/twitter.png" alt="the twitter logo">
+            <!-- LinkedIn logo --><img width="30" height="30" src="img/linkedin.svg" alt="the linkedin logo"> </div>
+    </footer>
+
 </body>
 
 </html>

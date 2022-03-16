@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+span {
+    display: inline-block;
+}
+
+ol,
+ul {
+    background: #ff9999;
+    padding-left: 45px;
+}
+
+ol li,
+ul li {
+    background: #ffe5e5;
+    padding: 4px 10px;
+}
+
+.title {
+    text-align: center
+}
+
+.numberOne {}
+
+.main {}
