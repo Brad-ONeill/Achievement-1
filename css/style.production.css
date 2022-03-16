@@ -394,6 +394,14 @@ img .pSnapshot {
     grid-gap: 20px;
 }
 
+.grid75_left {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0;
+}
+
 
 .grid__item {
     background-color: #c6d1cf;
