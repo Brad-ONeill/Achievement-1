@@ -2,7 +2,7 @@ print("Welcome to the tip calculator!\n")
 
 bill = float(input("What was the total bill? £"))
 
-tip_options = {"0":0.0, "10": 0.1, "12": 0.12, "15": 0.15}
+tip_options = {"0": 0.0, "10": 0.1, "12": 0.12, "15": 0.15}
 tip_percentage = input("\nWhat percentage would you like to tip: 0, 10%, 12%, or 15%? ")
 
 while tip_percentage not in tip_options:
